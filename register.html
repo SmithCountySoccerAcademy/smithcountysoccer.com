@@ -1,0 +1,205 @@
+<!doctype html><html lang="en" class="no-js"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register | Smith County Soccer | Lindale, TX</title>
+<meta name="description" content="Register for Smith County Soccer at YWAM Lindale: Soccer Start, Soccer Academy, Smith County Knights and Pickup soccer. 2026-27 season.">
+<link rel="canonical" href="https://smithcountysoccer.com/register.html">
+<link rel="icon" href="assets/img/favicon.png"><link rel="stylesheet" href="assets/style.css">
+<style>
+.reg-hero{padding:130px 0 70px}
+.reg-hero p{max-width:760px;opacity:.95}
+form.full{gap:0;padding:0;overflow:hidden}
+fieldset{border:0;border-top:1px solid #e3e6ee;margin:0;padding:22px}
+fieldset:first-of-type{border-top:0}
+legend{font-weight:900;color:var(--blue);font-size:1.15rem;padding:0;float:left;width:100%;margin-bottom:12px}
+legend span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--yellow);color:var(--black);font-size:.9rem;margin-right:8px}
+.g{display:grid;gap:12px;clear:both}
+@media(min-width:700px){.g.c2{grid-template-columns:1fr 1fr}.g.c3{grid-template-columns:1fr 1fr 1fr}}
+.prog{display:grid;gap:10px}@media(min-width:820px){.prog{grid-template-columns:repeat(4,1fr)}}
+.prog label{display:block;border:2px solid #d6dbe6;border-radius:12px;padding:12px 14px;cursor:pointer;font-weight:600}
+.prog label:has(input:checked){border-color:var(--blue);background:#eef3fc}
+.prog input{width:auto;margin-right:6px}.prog small{display:block;color:#555;font-weight:500;margin-top:4px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:500}.chk input{width:auto;margin-top:4px;flex:none}
+.inline{display:flex;flex-wrap:wrap;gap:14px;font-weight:500}.inline label{display:flex;gap:6px;align-items:center;font-weight:500}.inline input{width:auto}
+.hint{font-weight:500;color:#555;font-size:.85rem}
+.agegrid td,.agegrid th{font-size:.88rem}
+.note{background:#eef3fc;border-left:5px solid var(--blue);border-radius:10px;padding:12px 14px;font-size:.92rem}
+.submit-bar{background:var(--gray);padding:20px 22px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+#status{font-weight:700}
+#done{display:none}
+</style>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap nav">
+ <a class="brand" href="index.html#top"><img src="assets/img/crest-reverse.svg" alt="" width="46" height="37"><span>SMITH COUNTY SOCCER</span></a>
+ <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+ <ul id="menu"><li><a href="index.html#programs">Programs</a></li><li><a href="index.html#pathway">Pathway</a></li><li><a href="index.html#knights-quest">Knights Quest</a></li><li><a href="about.html">About</a></li><li><a href="index.html#sponsors">Sponsors</a></li><li><a href="index.html#faq">FAQ</a></li><li><a class="navcta" href="register.html" aria-current="page">Register</a></li></ul>
+</div></header>
+<main id="main">
+<section class="page-hero reg-hero"><div class="wrap">
+ <div class="eyebrow">2026-27 season &middot; YWAM Lindale &middot; Nov 2026 &ndash; May 2027</div>
+ <h1 style="font-size:clamp(1.9rem,5vw,2.8rem)">Player Registration</h1>
+ <p>One form per child. It takes about 5 minutes. Coaching is <strong>$80/month</strong> for every program, by monthly autopay. After you submit, you'll go to a secure payment page to start autopay.</p>
+</div></section>
+
+<section class="alt" style="padding-top:34px"><div class="wrap">
+<!--
+  ===== PLACEHOLDER FORM ACTION =====
+  Replace YOUR_FORM_ID below with a real endpoint before going live.
+  Recommended (simplest, free): Formspree. Create a free account, create a form, and paste its endpoint
+  (https://formspree.io/f/xxxxxxx) into action="". Free plan: 50 submissions/month, 30-day archive, email delivery.
+  Alternatives: Google Forms (free, unlimited, responses in Google Sheets; link or embed it instead of this form)
+  or Jotform (built-in e-signature and payment widgets).
+  Autopay: create one recurring $80/month Stripe Payment Link (or a Square subscription/checkout link) and paste it
+  into PAYMENT_LINK in the script at the bottom. After a successful submit, families are sent to that link.
+-->
+<form class="full" id="regform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+ <input type="hidden" name="_subject" value="New registration - Smith County Soccer">
+ <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+ <fieldset><legend><span>1</span>Program</legend>
+  <div class="prog g">
+   <label><input type="radio" name="program" value="Soccer Start" required>Soccer Start<small>Coed U3&ndash;U5<br>Tue/Thu 10:00 AM<br>Parent stays on site</small></label>
+   <label><input type="radio" name="program" value="Soccer Academy">Soccer Academy<small>Coed U6&ndash;U10<br>Tue/Thu 5:30 PM</small></label>
+   <label><input type="radio" name="program" value="Smith County Knights (Club)">Smith County Knights<small>Club U11&ndash;U14<br>Mon/Wed 5:30 PM</small></label>
+   <label><input type="radio" name="program" value="Pickup soccer">Pickup soccer<small>Open play &middot; day/time <span class="tbd">TBD</span><br>No autopay</small></label>
+  </div>
+  <p class="hint" style="margin:10px 0 0">Launch-phase times are proposed. Groups split into the full age-group schedule as they reach about 12 players.</p>
+  <div class="g c3" style="margin-top:14px">
+   <label>Age group<select name="age_group" id="age_group" required><option value="">Choose a program first</option></select><span class="hint" id="age_hint"></span></label>
+   <label>Start month<select name="start_month" required><option value="">Select</option><option>Nov 2026</option><option>Dec 2026</option><option>Jan 2027</option><option>Feb 2027</option><option>Mar 2027</option><option>Apr 2027</option><option>May 2027</option></select></label>
+  </div>
+  <details style="margin-top:14px;box-shadow:none;border:1px solid #e3e6ee"><summary>Which age group? (2026-27, Aug 1 - Jul 31 birthdates)</summary>
+   <table class="agegrid"><tr><th>Group</th><th>Born between</th></tr>
+    <tr><td>U3</td><td>Aug 1, 2023 &ndash; Jul 31, 2024</td></tr><tr><td>U4</td><td>Aug 1, 2022 &ndash; Jul 31, 2023</td></tr><tr><td>U5</td><td>Aug 1, 2021 &ndash; Jul 31, 2022</td></tr>
+    <tr><td>U6 (incl. U7)</td><td>Aug 1, 2019 &ndash; Jul 31, 2021</td></tr><tr><td>U8 (incl. U9)</td><td>Aug 1, 2017 &ndash; Jul 31, 2019</td></tr><tr><td>U10</td><td>Aug 1, 2016 &ndash; Jul 31, 2017</td></tr>
+    <tr><td>U11 (incl. U12)</td><td>Aug 1, 2014 &ndash; Jul 31, 2016</td></tr><tr><td>U13 (incl. U14)</td><td>Aug 1, 2012 &ndash; Jul 31, 2014</td></tr></table>
+   <p class="hint">In-between ages train with the group below: U7 with U6, U9 with U8, U12 with U11, U14 with U13. The coach may adjust by ability.</p></details>
+ </fieldset>
+
+ <fieldset><legend><span>2</span>Player</legend>
+  <div class="g c3">
+   <label>First name<input name="player_first" required autocomplete="off"></label>
+   <label>Last name<input name="player_last" required autocomplete="off"></label>
+   <label>Preferred name (optional)<input name="player_nickname"></label>
+   <label>Date of birth<input type="date" name="player_dob" id="dob" required></label>
+   <label>Gender<select name="player_gender" required><option value="">Select</option><option>Boy</option><option>Girl</option></select><span class="hint">Used only to plan boys/girls Academy groups as they grow.</span></label>
+   <label>Shirt size<select name="shirt_size" required><option value="">Select</option><option>Youth XS (2-4)</option><option>Youth S (6-8)</option><option>Youth M (10-12)</option><option>Youth L (14-16)</option><option>Youth XL</option><option>Adult S</option><option>Adult M</option><option>Adult L</option></select></label>
+   <label>School (optional)<input name="school"></label>
+   <label>Grade (2026-27)<select name="grade"><option value="">Select</option><option>Not in school yet</option><option>Pre-K</option><option>K</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label>
+   <label>Soccer experience<select name="experience" required><option value="">Select</option><option>None, brand new</option><option>1 season</option><option>2-3 seasons</option><option>4+ seasons</option><option>Club / select</option></select></label>
+  </div>
+  <div class="g c2" style="margin-top:12px"><label>Previous team or club (optional)<input name="previous_team"></label><label>Preferred foot / position (optional)<input name="position"></label></div>
+ </fieldset>
+
+ <fieldset><legend><span>3</span>Parent / guardian</legend>
+  <div class="g c3">
+   <label>Full name<input name="parent1_name" required autocomplete="name"></label>
+   <label>Relationship<select name="parent1_relationship" required><option value="">Select</option><option>Mother</option><option>Father</option><option>Legal guardian</option><option>Other</option></select></label>
+   <label>Mobile phone<input type="tel" name="parent1_phone" required autocomplete="tel"></label>
+   <label>Email<input type="email" name="parent1_email" required autocomplete="email"></label>
+   <label style="grid-column:span 2">Home address, city, ZIP<input name="address" required autocomplete="street-address"></label>
+  </div>
+  <label class="chk" style="margin-top:12px"><input type="checkbox" name="ok_to_text" value="yes">OK to text me schedule and weather updates</label>
+  <details style="margin-top:12px;box-shadow:none;border:1px solid #e3e6ee"><summary>Add a second parent / guardian (optional)</summary>
+   <div class="g c2"><label>Full name<input name="parent2_name"></label><label>Relationship<input name="parent2_relationship"></label><label>Mobile phone<input type="tel" name="parent2_phone"></label><label>Email<input type="email" name="parent2_email"></label></div></details>
+  <label style="display:block;margin-top:12px">Others allowed to pick up the player (optional)<input name="authorized_pickup"></label>
+ </fieldset>
+
+ <fieldset><legend><span>4</span>Emergency contacts <small class="hint">(other than the parents above)</small></legend>
+  <div class="g c3">
+   <label>Contact 1 name<input name="ec1_name" required></label><label>Relationship<input name="ec1_relationship" required></label><label>Phone<input type="tel" name="ec1_phone" required></label>
+   <label>Contact 2 name (optional)<input name="ec2_name"></label><label>Relationship<input name="ec2_relationship"></label><label>Phone<input type="tel" name="ec2_phone"></label>
+  </div>
+ </fieldset>
+
+ <fieldset><legend><span>5</span>Medical</legend>
+  <p class="hint" style="clear:both;margin-top:0">Kept private and shared only with coaches who need it. Write "None" if none.</p>
+  <div class="g c2">
+   <label>Allergies and reaction<textarea name="allergies" rows="2" required></textarea></label>
+   <label>Medications (including an inhaler or EpiPen brought to sessions)<textarea name="medications" rows="2" required></textarea></label>
+  </div>
+  <div style="margin-top:12px"><span style="font-weight:600;font-size:.92rem">Medical conditions</span>
+   <div class="inline"><label><input type="checkbox" name="conditions" value="Asthma">Asthma</label><label><input type="checkbox" name="conditions" value="Diabetes">Diabetes</label><label><input type="checkbox" name="conditions" value="Seizures">Seizures</label><label><input type="checkbox" name="conditions" value="Heart condition">Heart condition</label><label><input type="checkbox" name="conditions" value="None">None</label></div></div>
+  <div class="g c2" style="margin-top:12px">
+   <label>Other conditions or details<input name="conditions_other"></label>
+   <label>Past concussion? If yes, when<input name="past_concussion" placeholder="No / Yes - month, year" required></label>
+   <label>Doctor name and phone (optional)<input name="doctor"></label>
+   <label>Health insurance company and policy # (optional)<input name="health_insurance"></label>
+  </div>
+  <label style="display:block;margin-top:12px">Anything else coaches should know (optional)<textarea name="medical_notes" rows="2"></textarea></label>
+ </fieldset>
+
+ <fieldset><legend><span>6</span>Agreements and e-signature</legend>
+  <div class="g" style="gap:10px">
+   <label class="chk"><input type="checkbox" name="agree_waiver" value="yes" required><span>I have read and agree to the <a href="assets/docs/Waiver_and_Medical_Release.pdf" target="_blank" rel="noopener">Registration, Waiver &amp; Medical Release (PDF)</a>, including the assumption of risk, the <strong>release of liability for Smith County Soccer and YWAM Lindale</strong>, and the medical treatment authorization.</span></label>
+   <label class="chk"><input type="checkbox" name="agree_concussion" value="yes" required><span>I have read the <a href="https://www.cdc.gov/heads-up/" target="_blank" rel="noopener">CDC HEADS UP</a> concussion information and will review it with my child. A player with a suspected concussion sits out and returns only with written clearance from a licensed health care professional.</span></label>
+   <label class="chk"><input type="checkbox" name="agree_conduct" value="yes" required><span>My child and I will follow the Code of Conduct: respect for coaches, players, referees and YWAM Lindale's property and rules.</span></label>
+   <label class="chk"><input type="checkbox" name="agree_payment" value="yes" id="agree_payment" required><span><strong>Payment terms:</strong> $80/month per player per program by autopay. To cancel, give written notice before the next billing date (notice period <span class="tbd">TBD</span>). No refunds for missed sessions or weather cancellations; make-ups when possible.</span></label>
+   <div><span style="font-weight:600;font-size:.92rem">Photo / media release</span>
+    <div class="inline"><label><input type="radio" name="photo_release" value="Yes" required>Yes, you may use photos/video of my child</label><label><input type="radio" name="photo_release" value="No">No, please don't</label></div></div>
+  </div>
+  <div class="g c2" style="margin-top:14px">
+   <label>E-signature: type your full legal name<input name="esignature" required><span class="hint">Typing your name is your electronic signature.</span></label>
+   <label>Date<input type="date" name="signature_date" id="sigdate" required></label>
+  </div>
+ </fieldset>
+
+ <fieldset><legend><span>7</span>How did you hear about us?</legend>
+  <div class="g c2">
+   <label>Source<select name="heard_from" required><option value="">Select</option><option>Friend or family</option><option>YWAM Lindale</option><option>School flyer</option><option>Church</option><option>Facebook / Instagram</option><option>Google</option><option>Knights Quest event</option><option>Other</option></select></label>
+   <label>Referred by (family name, optional)<input name="referred_by"></label>
+  </div>
+ </fieldset>
+
+ <div class="submit-bar">
+  <button class="btn" type="submit">Submit registration</button>
+  <span class="hint" id="paynote">Next: a secure payment page to start your $80/month autopay. Your spot is confirmed after the first payment.</span>
+  <span class="tbd">PLACEHOLDER: form not connected yet</span>
+  <div id="status" role="status" aria-live="polite" style="width:100%"></div>
+ </div>
+</form>
+
+<div id="done" class="card" style="margin-top:20px">
+ <h2>Thank you! Registration received.</h2>
+ <p id="done_msg">Last step: start your $80/month autopay to confirm your spot.</p>
+ <p><a class="btn" id="paybtn" href="#" target="_blank" rel="noopener">Set up autopay ($80/month)</a></p>
+ <p class="hint">Registering another child? <a href="register.html">Start a new form</a>.</p>
+</div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+ <div class="fgrid">
+  <div><img class="logo" src="assets/img/wordmark-reverse.svg" alt="Smith County Soccer"><p>Professional Soccer Development Pathway for East Texas kids. From a first kick to competitive club soccer.</p>
+   <div class="social"><a href="https://www.facebook.com/smithcountysoccer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a><a href="https://www.instagram.com/smithcountysocceracademy" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm5.2-8.6a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0zM16.5 2h-9A5.5 5.5 0 002 7.5v9A5.5 5.5 0 007.5 22h9a5.5 5.5 0 005.5-5.5v-9A5.5 5.5 0 0016.5 2zm3.5 14.5a3.5 3.5 0 01-3.5 3.5h-9A3.5 3.5 0 014 16.5v-9A3.5 3.5 0 017.5 4h9A3.5 3.5 0 0120 7.5z"/></svg></a></div></div>
+  <div><h4>Programs</h4><ul><li><a href="index.html#programs">Soccer Start</a></li><li><a href="index.html#programs">Soccer Academy</a></li><li><a href="index.html#programs">Smith County Knights</a></li><li><a href="index.html#camps">Camps &amp; Clinics</a></li><li><a href="index.html#knights-quest">Knights Quest</a></li></ul></div>
+  <div><h4>Club</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="index.html#sponsors">Sponsors</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="register.html">Register</a></li><li><a href="assets/docs/Waiver_and_Medical_Release.pdf">Waiver (PDF)</a></li></ul></div>
+  <div><h4>Contact</h4><ul><li><a href="tel:+19038053048">903.805.3048</a></li><li><a href="mailto:SmithCountySoccerAcademy@gmail.com">SmithCountySoccerAcademy@gmail.com</a></li><li>YWAM Lindale fields &middot; Lindale, TX</li><li>$80/month coaching, every program</li></ul></div>
+ </div>
+ <div class="fbottom"><span>&copy; <span data-year>2026</span> Smith County Soccer &middot; Lindale, TX</span><span>Ambition &middot; Effort &middot; Respect &middot; Integrity</span></div>
+</div></footer>
+<script>
+// PLACEHOLDER: paste your recurring $80/month Stripe Payment Link (or Square checkout link) here.
+const PAYMENT_LINK = "https://buy.stripe.com/YOUR_PAYMENT_LINK";
+const GROUPS={"Soccer Start":["U3","U4","U5"],"Soccer Academy":["U6 (incl. U7)","U8 (incl. U9)","U10"],"Smith County Knights (Club)":["U11 (incl. U12)","U13 (incl. U14)"],"Pickup soccer":["Pickup (all ages TBD)"]};
+const sel=document.getElementById('age_group'),hint=document.getElementById('age_hint'),f=document.getElementById('regform');
+function uAge(d){if(!d)return null;const [y,mo]=d.split('-').map(Number);return (mo>=8?2026:2027)-y} // 2026-27 seasonal year, Aug 1 cutoff
+function suggest(u){if(u==null)return '';const map={3:'U3',4:'U4',5:'U5',6:'U6',7:'U6',8:'U8',9:'U8',10:'U10',11:'U11',12:'U11',13:'U13',14:'U13'};return map[u]||''}
+function refresh(){const p=(f.querySelector('input[name=program]:checked')||{}).value;const u=uAge(document.getElementById('dob').value);const s=suggest(u);
+ if(p){const cur=sel.value;sel.innerHTML='<option value="">Select</option>'+GROUPS[p].map(g=>'<option>'+g+'</option>').join('');
+  const match=GROUPS[p].find(g=>s&&g.startsWith(s+' ')||g===s);sel.value=GROUPS[p].includes(cur)?cur:(match||'');}
+ hint.textContent=u?('Birthdate fits U'+u+' for 2026-27'+(s?' (group '+s+')':'')+'.'):'';
+ const pickup=p==='Pickup soccer';document.getElementById('agree_payment').required=!pickup;document.getElementById('paynote').style.display=pickup?'none':''}
+f.querySelectorAll('input[name=program]').forEach(r=>r.addEventListener('change',refresh));document.getElementById('dob').addEventListener('change',refresh);
+document.getElementById('sigdate').valueAsDate=new Date();
+f.addEventListener('submit',async e=>{e.preventDefault();const st=document.getElementById('status');
+ if(f.action.includes('YOUR_FORM_ID')){st.innerHTML='<span class="tbd">Demo mode: this form is not connected yet (placeholder action). Nothing was sent.</span>';return}
+ st.textContent='Sending...';
+ try{const r=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+  if(!r.ok)throw 0;const pickup=(f.querySelector('input[name=program]:checked')||{}).value==='Pickup soccer';
+  f.style.display='none';const d=document.getElementById('done');d.style.display='block';
+  if(pickup){document.getElementById('done_msg').textContent="We'll be in touch with pickup soccer details.";document.getElementById('paybtn').parentElement.style.display='none'}
+  else document.getElementById('paybtn').href=PAYMENT_LINK;d.scrollIntoView({behavior:'smooth'})}
+ catch(_){st.textContent='Something went wrong. Please try again or contact us.'}});
+</script>
+<script src="assets/js/site.js" defer></script>
+</body></html>
